@@ -37,8 +37,8 @@ Built for the modern web (2026), embracing spatial computing, dark-mode elegance
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/solar-system-2026.git
-cd solar-system-2026
+git clone https://github.com/JahanzaibJameel/solar-system
+cd solar-system
 ```
 
 ### Run the Simulation
