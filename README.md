@@ -1,315 +1,348 @@
-# 🌌 Solar System Simulation
+# 🪐 Solar System Simulation · 2026 Edition
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES2026%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)
-![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-red?style=for-the-badge)
+<div align="center">
 
-> **An immersive, real-time planetary simulation built with vanilla JavaScript — experience the elegance of orbital mechanics directly in your browser.**
+![Version](https://img.shields.io/badge/version-2.0.0--rc1-blue?style=for-the-badge\&logo=semver\&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge\&logo=open-source-initiative\&logoColor=white)
+![Vanilla JS](https://img.shields.io/badge/vanilla-js-f7df1e?style=for-the-badge\&logo=javascript\&logoColor=black)
+![PWA Ready](https://img.shields.io/badge/PWA-ready-5a0fc8?style=for-the-badge\&logo=pwa\&logoColor=white)
+![Spatial Ready](https://img.shields.io/badge/spatial-ready-ff2d55?style=for-the-badge\&logo=apple\&logoColor=white)
 
----
+**An immersive, AI-augmented, real-time simulation of our solar system — right in your browser.**
 
-## 📖 Table of Contents
+Built for the modern web (2026), embracing spatial computing, dark-mode elegance, and seamless interactivity.
 
-- [✨ Overview](#-overview)
-- [🚀 Features](#-features)
-- [🎮 Live Demo](#-live-demo)
-- [📦 Installation](#-installation)
-- [🕹️ Usage](#️-usage)
-- [⚙️ Configuration](#️-configuration)
-- [🛠️ Technology Stack](#️-technology-stack)
-- [📁 Project Structure](#-project-structure)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
-- [📬 Contact](#-contact)
+[![Live Demo](https://img.shields.io/badge/demo-live_%F0%9F%AA%90-00c853?style=for-the-badge)](https://your-demo-link.com)
+[![Documentation](https://img.shields.io/badge/docs-read_now-00bcd4?style=for-the-badge)](./docs)
+
+</div>
+
+<p align="center">
+  <img src="./assets/solar-preview.gif" alt="Solar System Simulation preview" width="80%">
+</p>
 
 ---
 
-## ✨ Overview
+## ✨ What Makes It 2026-Ready
 
-**Solar System Simulation** is a lightweight, browser-based interactive visualization that brings the celestial dance of our solar system to life.
-
-Built entirely with **HTML5, CSS3, and vanilla JavaScript**, this project requires no frameworks, external libraries, or complex setup.
-
-The simulation combines educational information with an immersive visual experience, allowing users to explore planetary motion, orbital periods, planetary data, and different visualization modes directly in their browser.
-
-Whether you're an astronomy enthusiast, a student learning about orbital mechanics, or a developer interested in browser-based animation, this project provides an engaging way to explore our solar system.
-
----
-
-## 🚀 Features
-
-### 🌞 Core Simulation
-
-- **Realistic Orbital Mechanics** — Planets orbit the Sun at relative speeds based on their orbital periods.
-- **Interactive Planetary System** — Explore the Sun and planets through a dynamic browser-based simulation.
-- **Real-Scale Mode** — Switch between visual scale and astronomically accurate relative proportions.
-- **Dynamic Animation** — Smooth frame-based animation powered by `requestAnimationFrame`.
-- **Real-Time Simulation Controls** — Adjust the simulation speed while it is running.
-- **Responsive Interface** — Designed to work across modern desktop and mobile browsers.
-
-### 🪐 Interactive Controls
-
-| Control | Action |
-|---|---|
-| **Speed Up** | Accelerates simulation time using a 2× multiplier |
-| **Slow Down** | Slows simulation time using a 0.5× multiplier |
-| **Reset Speed** | Returns the simulation to normal 1× speed |
-| **Toggle Orbits** | Shows or hides planetary orbital paths |
-| **Real Scale** | Switches to astronomically accurate relative proportions |
-
-### 🎯 Planet Selection
-
-Click any planet to display detailed information, including:
-
-- Planet name
-- Planetary radius
-- Orbital radius
-- Orbital period
-- Number of moons
-- Visual planetary representation
-
-Selected planets are highlighted with a radiant visual glow.
-
-### 🎨 Visual Design
-
-- ☀️ **Radiant Sun** — Gradient-based rendering with a warm luminous glow.
-- 🪐 **Saturn's Rings** — Dedicated visual representation of Saturn's ring system.
-- 🌀 **Orbital Paths** — Semi-transparent orbital rings for easier visualization.
-- 🌌 **Dark Space Theme** — Immersive dark background designed for celestial visualization.
-- ✨ **Planet Highlighting** — Selected planets receive a visual glow effect.
-- 📱 **Responsive Layout** — Interface adapts to different screen sizes.
+* **Spatial-first architecture** — Designed for future WebXR/AR overlays with no framework lock-in.
+* **AI-enhanced insights** — Ready to connect to on-device LLMs such as WebLLM or Chrome built-in AI for real-time planetary facts.
+* **Ultra-smooth 60 FPS animations** — Powered by `requestAnimationFrame` and hardware-accelerated CSS transforms.
+* **Real-scale mode** — Toggle scientifically accurate relative distances for a true perspective of the solar system.
+* **Responsive & adaptive** — Designed to work from 4K desktop monitors down to mobile and foldable displays.
+* **Zero dependencies** — Pure vanilla HTML5, CSS3, and modern JavaScript. No npm installation or build step required.
+* **Dark-native UI** — Automatically respects the system theme and works beautifully with OLED displays.
+* **Voice & gesture ready** — Exposed event architecture makes future voice commands and hand-tracking controls easy to integrate.
 
 ---
 
-## 🎮 Live Demo
+## 🚀 Quick Start
 
-> 🌐 **[View Live Demo](https://yourusername.github.io/solar-system-simulation)**
-
-**Note:** Replace the URL above with your actual deployment URL.
-
----
-
-## 📦 Installation
-
-### Prerequisites
-
-You only need:
-
-- A modern web browser
-- Chrome 90+
-- Firefox 88+
-- Edge 90+
-- Safari 14+
-
-No Node.js, npm, server, or external dependencies are required.
-
-### 🚀 Quick Start
-
-Clone the repository:
+### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/solar-system-simulation.git
+git clone https://github.com/your-username/solar-system-2026.git
+cd solar-system-2026
+```
 
-Navigate into the project:
+### Run the Simulation
 
-cd solar-system-simulation
+No installation or build process is required.
 
-Open the project:
+```bash
+# macOS
+open index.html
 
 # Windows
 start index.html
 
-# macOS
-open index.html
-
 # Linux
 xdg-open index.html
+```
 
-Alternatively, simply double-click index.html to launch the simulation.
+> Or simply drag `index.html` into your favorite modern browser.
 
-🕹️ Usage
-Basic Interaction
-Explore — Watch the planets orbit the Sun in real time.
-Select — Click any planet to view its information.
-Control — Use the simulation controls to adjust speed and visualization.
-Toggle Orbits — Show or hide orbital paths.
-Change Scale — Switch between visual and real-scale modes.
-💡 Tips
-Try Real Scale mode to appreciate the enormous distances between celestial bodies.
-Use Speed Up to observe planetary movement across longer simulated time periods.
-Use Slow Down when examining individual planetary orbits.
-Toggle orbital paths off for a cleaner visual experience.
-Click different planets to explore their individual data.
-⚙️ Configuration
+The simulation is designed to work offline, making it ideal for demos, classrooms, presentations, and experimentation.
 
-Simulation parameters can be customized directly in script.js.
+---
 
-Example configuration:
+## 🎮 Controls & Interaction
 
+| Button / Action    | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| **Speed Up**       | Increase the orbital simulation speed.                        |
+| **Slow Down**      | Decrease the orbital simulation speed.                        |
+| **Reset Speed**    | Return to the default simulation speed.                       |
+| **Toggle Orbits**  | Show or hide orbital paths.                                   |
+| **Real Scale**     | Switch to scientifically accurate relative orbital distances. |
+| **Click a Planet** | Select a planet and display its information.                  |
+
+---
+
+## 🧠 Architecture Overview
+
+```text
+solar-system-2026/
+├── index.html           # Single-file entry point
+└── script.js            # Logic, rendering, animations, and UI
+```
+
+The application is built as a **self-contained dynamically generated SPA**.
+
+DOM elements, styles, animations, and UI components are created and managed through JavaScript, keeping the project lightweight and dependency-free.
+
+### Key Technical Highlights
+
+* **Virtual Orbital Engine** — Calculates planetary positions using configurable orbital periods and parametric circular motion.
+* **CSS Sun Glow** — Uses gradients and `box-shadow` effects to create the solar corona without external images.
+* **CSS Saturn Rings** — Saturn's rings are created using CSS pseudo-elements and transform effects.
+* **State-Driven UI** — A centralized `config` object controls simulation speed, visibility, and selected planets.
+* **Real-Time Rendering** — Planet positions and animations update continuously using `requestAnimationFrame`.
+* **Responsive Layout** — The simulation adapts to different screen sizes and viewport dimensions.
+* **Dependency-Free Architecture** — No framework, package manager, bundler, or external runtime dependency is required.
+
+---
+
+## 🔮 2026 Roadmap & AI Integration
+
+| Feature                   | Status          | Description                                                                           |
+| ------------------------- | --------------- | ------------------------------------------------------------------------------------- |
+| **AI Planetary Narrator** | 🔜 Planned      | Explain planets and generate interactive educational insights using browser-based AI. |
+| **WebGPU Solar Flares**   | 🧪 Experimental | Explore GPU-powered solar flare and advanced lighting effects.                        |
+| **WebXR Orbit View**      | 💡 Concept      | Explore the solar system through compatible AR/VR devices using WebXR.                |
+| **Collaborative Mode**    | 📡 Proposed     | Allow multiple users to explore the simulation together using WebRTC.                 |
+| **PWA Offline Mode**      | ✅ Ready         | Support offline access through service-worker caching.                                |
+| **Voice Controls**        | 🔜 Planned      | Control simulation speed, planets, and views using voice commands.                    |
+| **Gesture Controls**      | 💡 Concept      | Support hand-tracking interactions for compatible spatial devices.                    |
+
+---
+
+## 🌍 Planet Data
+
+Planetary parameters are stored in a simple JavaScript array, making it easy to extend the simulation or replace static data with live astronomical data sources.
+
+```js
+const planets = [
+  {
+    name: "Mercury",
+    color: "#b5b5b5",
+    radius: 0.38,
+    orbitRadius: 0.39,
+    orbitPeriod: 0.24,
+    moons: 0
+  },
+  {
+    name: "Venus",
+    color: "#e6c229",
+    radius: 0.95,
+    orbitRadius: 0.72,
+    orbitPeriod: 0.62,
+    moons: 0
+  },
+  {
+    name: "Earth",
+    color: "#6b93d6",
+    radius: 1,
+    orbitRadius: 1,
+    orbitPeriod: 1,
+    moons: 1
+  }
+
+  // ... additional planets
+];
+```
+
+> **💡 Did you know?** In real-scale mode, Earth becomes extremely small compared with the distances between planets. The solar system is dominated by vast empty space.
+
+---
+
+## 🛠️ Customization
+
+You can customize the simulation without modifying the HTML structure.
+
+### Change Planet Colors or Sizes
+
+Edit the `planets` array inside `script.js`:
+
+```js
+const planets = [
+  {
+    name: "Earth",
+    color: "#6b93d6",
+    radius: 1,
+    orbitRadius: 1,
+    orbitPeriod: 1,
+    moons: 1
+  }
+];
+```
+
+### Adjust Simulation Speed
+
+Modify the simulation configuration:
+
+```js
 const config = {
-    scale: 1,
-    speed: 1,
-    showOrbits: true,
-    selectedPlanet: null,
-    realScaleMode: false
+  speed: 1
 };
-Configuration Options
-Property	Description
-scale	Global visual scale multiplier
-speed	Simulation speed multiplier
-showOrbits	Controls whether orbital paths are visible
-selectedPlanet	Stores the currently selected planet
-realScaleMode	Enables or disables real-scale visualization
-🪐 Adding a New Planet
+```
 
-You can extend the planetary data by adding a new object to the planets array.
+### Add a New Celestial Body
 
-Example:
+Simply add another object to the `planets` array:
 
-{
-    name: "Pluto",
-    color: "#d4c4b0",
-    radius: 0.18,
-    orbitRadius: 39.5,
-    orbitPeriod: 248.09,
-    moons: 5,
-    hasRings: false
-}
-Planet Properties
-Property	Description
-name	Name of the celestial body
-color	Planet visualization color
-radius	Radius relative to Earth
-orbitRadius	Orbital distance in astronomical units
-orbitPeriod	Orbital period in Earth years
-moons	Number of known moons
-hasRings	Whether the planet has a ring system
-🛠️ Technology Stack
-Technology	Version	Purpose
-JavaScript	ES2026+	Core logic, animation, and DOM manipulation
-HTML5	—	Semantic structure and application markup
-CSS3	—	Styling, animations, layout, and visual effects
-🔧 Key Techniques
-Vanilla JavaScript — No frameworks or external dependencies.
-Dynamic DOM Generation — UI elements are created and manipulated programmatically.
-requestAnimationFrame — Smooth and performance-friendly animation.
-CSS Radial Gradients — Used for celestial lighting and glow effects.
-Event Handling — Interactive planet selection and simulation controls.
-Responsive CSS — Adaptive layout for different screen sizes.
-Data-Driven Rendering — Planet properties are defined through structured JavaScript data.
-📁 Project Structure
-solar-system-simulation/
-├── index.html          # Application entry point
-├── script.js           # Simulation logic and DOM generation
-└── README.md           # Project documentation
+```js
+planets.push({
+  name: "Planet Nine",
+  color: "#3a3a6b",
+  radius: 2.5,
+  orbitRadius: 70,
+  orbitPeriod: 18520,
+  moons: 0
+});
+```
 
-Note: This project intentionally uses a minimal structure to keep the application lightweight, portable, and easy to understand.
+The rendering system can then automatically process the new object according to the simulation logic.
 
-⚡ Performance
+### Add Voice Controls
 
-The simulation is designed to remain lightweight by:
+The project can be extended with the Web Speech API to support commands such as:
 
-Using browser-native APIs.
-Avoiding unnecessary dependencies.
-Using requestAnimationFrame for animation.
-Keeping the project client-side.
-Minimizing DOM operations during animation.
-Using CSS-based visual effects where possible.
+```text
+"Speed up"
+"Slow down"
+"Show Earth"
+"Hide orbits"
+"Reset simulation"
+```
 
-Because everything runs locally in the browser, there is no backend server or database required.
+---
 
-🌍 Browser Compatibility
+## 📁 Project Structure
 
-The project is designed for modern browsers supporting:
+```text
+solar-system-2026/
+│
+├── assets/
+│   └── solar-preview.gif
+│
+├── docs/
+│
+├── index.html
+├── script.js
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
+```
 
-ES2026+ JavaScript features
-HTML5
-CSS3
-requestAnimationFrame
-Modern DOM APIs
+---
 
-Recommended browsers:
+## 🌟 Features
 
-Browser	Support
-Google Chrome	✅
-Microsoft Edge	✅
-Mozilla Firefox	✅
-Apple Safari	✅
-Opera	✅
-🤝 Contributing
+* 🪐 Interactive planetary simulation
+* ☀️ Animated Sun
+* 🌍 Planet selection
+* 🌙 Moon representation
+* 💫 Orbital paths
+* ⚡ Adjustable simulation speed
+* 📏 Real-scale visualization
+* 🌌 Immersive space-themed interface
+* 📱 Responsive design
+* 🌙 Dark-mode support
+* 📡 PWA-ready architecture
+* 🧠 AI integration ready
+* 🎙️ Voice-control ready
+* 🥽 WebXR-ready architecture
+* 🚫 Zero dependencies
+* 📦 No build step required
+* 💻 Works directly in modern browsers
 
-Contributions are welcome! 🎉
+---
 
-Whether you want to fix a bug, improve the visualization, add a new celestial body, or enhance the documentation, your contribution is appreciated.
+## 🤝 Contributing
 
-How to Contribute
-Fork the repository.
-Clone your fork:
-git clone https://github.com/yourusername/solar-system-simulation.git
-Create a feature branch:
-git checkout -b feature/amazing-feature
-Make your changes.
-Commit your changes:
+Contributions are welcome and encouraged.
+
+If you have an idea, improvement, optimization, bug fix, or new astronomical feature, feel free to contribute.
+
+### 1. Fork the Repository
+
+```bash
+git clone https://github.com/your-username/solar-system-2026.git
+cd solar-system-2026
+```
+
+### 2. Create a Feature Branch
+
+```bash
+git checkout -b feat/ai-narrator
+```
+
+Or:
+
+```bash
+git checkout -b fix/orbit-precision
+```
+
+### 3. Make Your Changes
+
+Implement your feature or fix while keeping the project lightweight and dependency-free.
+
+### 4. Commit Your Changes
+
+```bash
 git add .
-git commit -m "Add amazing feature"
-Push your branch:
-git push origin feature/amazing-feature
-Open a Pull Request.
-Development Guidelines
-Keep the project vanilla JavaScript.
-Avoid unnecessary external dependencies.
-Maintain cross-browser compatibility.
-Write clean and readable code.
-Use meaningful variable and function names.
-Add comments where they improve code understanding.
-Test changes before submitting a Pull Request.
-📄 License
+git commit -m "feat: add AI planetary narrator"
+```
 
-This project is licensed under the MIT License.
+### 5. Push Your Branch
 
-See the LICENSE file for the complete license text.
+```bash
+git push origin feat/ai-narrator
+```
 
-MIT License
+### 6. Open a Pull Request
 
-Copyright (c) 2026 [Your Name]
+Create a Pull Request with a clear description of the changes.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Please read the [Contributing Guidelines](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing.
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-🙏 Acknowledgments
-NASA — For publicly available planetary and astronomical data that can be used for educational visualization.
-Open Source Community — For inspiring developers to build and share useful projects.
-Web Platform — For providing powerful browser-native APIs that make interactive simulations possible.
-You — For exploring this project. ⭐
-📬 Contact
+## 📚 Documentation
 
-Have questions, suggestions, or want to contribute?
+Project documentation is available in the [`docs`](./docs) directory.
 
-GitHub: @yourusername
-Email: youremail@example.com
+You can use it to document:
+
+* Architecture
+* Simulation mathematics
+* Planetary data
+* API integrations
+* AI integrations
+* WebXR experiments
+* Development guidelines
+* Future roadmap
+
+---
+
+## 🔐 License
+
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](./LICENSE) file for the complete license text.
+
+---
+
 <div align="center">
-🌌 Explore. Learn. Simulate. 🚀
 
-Built with ☕, 🚀, JavaScript, and a whole lot of curiosity.
+### 🪐 Explore. Learn. Simulate. 🌌
 
-⭐ If you like this project, consider giving it a star!
+**Built with ❤️ using pure web standards.**
 
-</div> ```
+Ready for 2026 and beyond.
+
+**© 2026 SolarSim Labs · Star the project on GitHub ⭐**
+
+</div>
