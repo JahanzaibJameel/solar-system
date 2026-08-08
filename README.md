@@ -11,8 +11,6 @@
 **An immersive, AI-augmented, real-time simulation of our solar system — right in your browser.**
 
 Built for the modern web (2026), embracing spatial computing, dark-mode elegance, and seamless interactivity.
-
-
 </div>
 
 <p align="center">
