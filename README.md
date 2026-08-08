@@ -12,8 +12,6 @@
 
 Built for the modern web (2026), embracing spatial computing, dark-mode elegance, and seamless interactivity.
 
-[![Live Demo](https://img.shields.io/badge/demo-live_%F0%9F%AA%90-00c853?style=for-the-badge)](https://your-demo-link.com)
-[![Documentation](https://img.shields.io/badge/docs-read_now-00bcd4?style=for-the-badge)](./docs)
 
 </div>
 
