@@ -265,7 +265,7 @@ If you have an idea, improvement, optimization, bug fix, or new astronomical fea
 ### 1. Fork the Repository
 
 ```bash
-git clone https://github.com/your-username/solar-system-2026.git
+git clone  https://github.com/JahanzaibJameel/solar-system
 cd solar-system-2026
 ```
 
